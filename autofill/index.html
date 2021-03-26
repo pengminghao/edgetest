@@ -25,6 +25,7 @@
 	  form['CCNo'].value = '5183-7500-2075-9120';
 	  form['CCExpiresMonth'].value = '01';
 	  form['CCExpiresYear'].value = '2025';
+	  form['cvc'].value = '111';
   }
   var FillFormBad = function() {
 	  var form = document.forms['form1'];
@@ -37,6 +38,7 @@
 	  form['CCNo'].value = '4417-1234-5678-9113';
 	  form['CCExpiresMonth'].value = '12';
 	  form['CCExpiresYear'].value = '2022';
+	  form['cvc'].value = '103';
   }
 
   var BasicFillForm = function(id, str) {
@@ -94,7 +96,7 @@
 
   <h3>Credit Card Autofill</h3>
 
-<form name="addr1.1" id="form1" action="https://bing.com/" method="post">
+<form name="addr1.1" id="form1" action="https://example.com/" method="post">
   Name: <input autofocus="" type="text" name="name" placeholder="Name"><br>
   Address: <input type="text" name="address" placeholder="Address"><br>
   City: <input type="text" name="city" placeholder="City"><br>
