@@ -40,6 +40,20 @@
 	  form['CCExpiresYear'].value = '2022';
 	  form['cvc'].value = '222';
   }
+  var FillFormGoodAU = function() {
+	  var form = document.forms['form1'];
+	  form['name'].value = 'Chloe J Grubb';
+	  form['address'].value = '65 Little Myers Street';
+	  form['city'].value = 'BALLIANG EAST';
+	  form['state'].value = 'Victoria';
+	  form['zip'].value = '3340';
+	  form['country'].value = 'Australia';
+	  form['CCNo'].value = '5218-1279-0895-7267';
+	  form['CCExpiresMonth'].value = '04';
+	  form['CCExpiresYear'].value = '2024';
+	  form['cvc'].value = '113';
+  }
+  
 
   var BasicFillForm = function(id, str) {
 	  var form = document.forms[id];
@@ -167,6 +181,7 @@
     <option value="OH">OH</option>
     <option value="IL">IL</option>
     <option value="DC">DC</option>
+    <option value="Victoria">Victoria</option>
   </select> <br>
   City: <input name="billing_address_city"><br>
   Country: <input name="billing_address_country"><br>
@@ -181,6 +196,8 @@
 <button type="button" onclick="FillFormGood()">Fill Form (Good Card)</button>
 <br>
 <button type="button" onclick="FillFormBad()">Fill Form (Bad Card)</button>
+<br>
+<button type="button" onclick="FillFormGoodAU()">Fill Form (Good Card)</button>
 <br>
 
 	  <div class="statement-0-2-15">Microsoft partners with Benevity to pay supported nonprofits for the reward points redeemed by supporters like you. By making this transaction, you agree that Microsoft can email you about your feedback. <a class="statementLegal-0-2-16" href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank">Microsoft Privacy Statement</a></div>
