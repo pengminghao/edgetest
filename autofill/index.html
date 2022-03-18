@@ -40,20 +40,7 @@
 	  form['CCExpiresYear'].value = '2022';
 	  form['cvc'].value = '222';
   }
-  var FillFormGoodAU = function() {
-	  var form = document.forms['form1'];
-	  form['name'].value = 'Chloe J Grubb';
-	  form['address'].value = '65 Little Myers Street';
-	  form['city'].value = 'BALLIANG EAST';
-	  form['state'].value = 'Victoria';
-	  form['zip'].value = '3340';
-	  form['country'].value = 'Australia';
-	  form['CCNo'].value = '5218-1279-0895-7267';
-	  form['CCExpiresMonth'].value = '04';
-	  form['CCExpiresYear'].value = '2024';
-	  form['cvc'].value = '113';
-  }
-  
+
 
   var BasicFillForm = function(id, str) {
 	  var form = document.forms[id];
@@ -123,11 +110,29 @@
     <option value="OH">OH</option>
     <option value="IL">IL</option>
     <option value="DC">DC</option>
-    <option value="Victoria">Victoria</option>
-    <option value="Merseyside">Merseyside</option>
+    <option value="new south wales">AU-New South Wales</option>
+    <option value="queensland">AU-Queensland</option>
+    <option value="south australia">AU-South Australia</option>
+    <option value="tasmania">AU-Tasmania</option>
+    <option value="victoria">AU-Victoria</option>
+    <option value="western australia">AU-Western Australia</option>
+    <option value="australian capital territory">AU-Australian Capital Territory</option>
+    <option value="ab">CA-Alberta</option>
+    <option value="bc">CA-British Columbia</option>
+    <option value="mb">CA-Manitoba</option>
+    <option value="nb">CA-New Brunswick</option>
+    <option value="nl">CA-Newfoundland</option>
+    <option value="on">CA-Ontario</option>
+    <option value="pe">CA-Prince Edward</option>
   </select> <br>
   Zip: <input name="zip" id="form_zip" placeholder="Zip"> <br>
-  Country: <input name="country" id="form_country" placeholder="Country"> <br>
+  Country: 
+  <select name="country" id="form_country">
+    <option value="United States">United States</option>
+    <option value="Canada">Canada</option>
+    <option value="Australia">Australia</option>
+  </select>
+  <br>
   Card number* <input type="text" name="CCNo" id="credit_card_number"><br>
   Expiry Date: <select name="CCExpiresMonth">
     <option value="01">01</option>
@@ -200,11 +205,68 @@
 <br>
 <button type="button" onclick="FillFormBad()">Fill Form (Bad Card)</button>
 <br>
-<button type="button" onclick="FillFormGoodAU()">Fill Form (Good Card) AU</button>
-<br>
 
 	  <div class="statement-0-2-15">Microsoft partners with Benevity to pay supported nonprofits for the reward points redeemed by supporters like you. By making this transaction, you agree that Microsoft can email you about your feedback. <a class="statementLegal-0-2-16" href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank">Microsoft Privacy Statement</a></div>
-	  
+
+    
+<h3>Credit Card Autofill UK</h3>
+
+    <form name="addr1.1" id="form2" action="https://example.com/" method="post">
+      Name On Card: <input autofocus="" type="text" name="name" placeholder="Name On Card"><br>
+      Address: <input type="text" name="address" placeholder="Address"><br>
+      City: <input type="text" name="city" placeholder="City"><br>
+      Province: <input type="text" name="state" id="form_state" > <br>
+      </select> <br>
+      Zip: <input name="zip" id="form_zip" placeholder="Zip"> <br>
+      Country: <input name="country" id="form_country" placeholder="Country"> <br>
+      Card number* <input type="text" name="CCNo" id="credit_card_number"><br>
+      Expiry Date: <select name="CCExpiresMonth">
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select>
+      /
+    <select name="CCExpiresYear">
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+        <option value="2027">2027</option>
+        <option value="2028">2028</option>
+        <option value="2029">2029</option>
+        <option value="2030">2030</option>
+        <option value="2031">2031</option>
+        <option value="2032">2032</option>
+        <option value="2033">2033</option>
+        <option value="2034">2034</option>
+        <option value="2035">2035</option>
+        <option value="2036">2036</option>
+        <option value="2037">2037</option>	
+      </select>
+      <br>
+      CVC: <input name="cvc">
+      <br> 
+    <br>
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit" id="credit_card_submit">
+    </form>
+    
+        <div class="statement-0-2-15">Microsoft partners with Benevity to pay supported nonprofits for the reward points redeemed by supporters like you. By making this transaction, you agree that Microsoft can email you about your feedback. <a class="statementLegal-0-2-16" href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank">Microsoft Privacy Statement</a></div>
+    
+
 <hr>
   <h3>Basic form key/value Autocomplete (unstructured data)</h3>
 
